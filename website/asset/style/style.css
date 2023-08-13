@@ -1,3 +1,14 @@
+.clock {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #0c0c0c;
+    font-size: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 7px;
+    ;
+}
 body {
         width: 100%;
         height: 100vh;
@@ -57,7 +68,7 @@ body {
     padding-top: 100px;
     background-blend-mode: hue;
 }
-.Achievement {
+.Experience {
     background: linear-gradient(#ffffff 0%, rgba(255, 255, 255, 0.973) 40%, #ffffff00 100%);
     padding-bottom: 300px;
     padding-top: 100px;
@@ -71,6 +82,8 @@ body {
     color: #230033;
     background-color: white;
     padding-bottom: 2px;
+    padding-top: 5px;
+    background-blend-mode: hue;
 }
 .contact a {
     color: black;
