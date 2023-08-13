@@ -1,0 +1,17 @@
+.carousel {
+    display: flex; /* Use 'grid' for grid-based carousel */
+    overflow: hidden;
+  }
+  
+  .slide {
+    flex: 0 0 100%; /* For Flexbox carousel */
+    /* or */
+    /* grid-column: span 1;  For Grid-based carousel */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Optional styling for navigation buttons */
+  .carousel-button {
+    cursor: pointer;
+  }
+  
