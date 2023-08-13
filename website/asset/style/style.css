@@ -1,0 +1,82 @@
+body {
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(to right, rgba(255, 255, 255, 0.11), rgba(255, 255, 255, 0.075)), url("background.JPG");
+        background-size: cover, cover;
+        background-position: center, center;
+        background-blend-mode: darken; /* Gunakan blending mode 'overlay' atau sesuai preferensi */
+        background-attachment: fixed;
+    
+}
+.Judul {
+    display: flex;
+    color: aliceblue;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+
+}
+.profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    background-attachment: fixed;
+}
+.profileImage{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+  
+}
+.profile h2 {
+    color: white;
+}
+.profile h5 {
+    color: white;
+    transform: translateY(-5px);
+}
+.profile h1 {
+    color:white;
+    padding: 30px;
+}
+.raw {
+    padding: 0px 10px;
+}
+.biodata{
+    background: linear-gradient(#ffffff 0%, rgba(255, 255, 255, 0.904) 40%, #ffffff00 100%);
+    padding-bottom: 300px;
+    padding-top: 100px;
+}
+.Sprachkenntnisse {
+    background: linear-gradient(#ffffff 0%, rgba(255, 255, 255, 0.904) 40%, #ffffff00 100%);
+    padding-bottom: 300px;
+    padding-top: 100px;
+    background-blend-mode: hue;
+}
+.Achievement {
+    background: linear-gradient(#ffffff 0%, rgba(255, 255, 255, 0.973) 40%, #ffffff00 100%);
+    padding-bottom: 300px;
+    padding-top: 100px;
+    background-blend-mode: hue;
+}
+.carousel-inner {
+    display: grid;
+    place-items: center;
+}
+.footer {
+    color: #230033;
+    background-color: white;
+    padding-bottom: 2px;
+}
+.contact a {
+    color: black;
+    font-size: 30px;
+
+}
+.watermark {
+    padding-top: 5px;
+}
