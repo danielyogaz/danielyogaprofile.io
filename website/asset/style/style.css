@@ -7,7 +7,9 @@
     font-size: 10px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     letter-spacing: 7px;
-    ;
+    text-transform: uppercase;
+    text-align: center;
+    z-index: 500;
 }
 body {
         width: 100%;
@@ -17,8 +19,7 @@ body {
         background-position: center, center;
         background-blend-mode: darken; /* Gunakan blending mode 'overlay' atau sesuai preferensi */
         background-attachment: fixed;
-    
-}
+    }
 .Judul {
     display: flex;
     color: aliceblue;
@@ -27,6 +28,12 @@ body {
     flex-direction: column;
     margin-top: 100px;
 
+}
+.container-fluid {
+    transform: translate(0.3s);
+}
+.container-fluid:hover {
+    transform: translate(0.3s);
 }
 .profile{
     display: flex;
@@ -45,10 +52,34 @@ body {
 }
 .profile h2 {
     color: white;
+    transition: transform 0.3s;
+    
 }
+
 .profile h5 {
     color: white;
     transform: translateY(-5px);
+    transition: transform 0.3s ease;
+    text-decoration: none; /* Menghilangkan underline default */
+    position: relative; /* Membuat ruang untuk garis bawah yang akan ditambahkan */
+}
+.profile h5::before {
+    content: ''; /* Menambahkan konten pseudo-element sebelum teks */
+    position: absolute; /* Menempatkan garis bawah di bawah teks */
+    width: 100%; /* Panjang garis bawah sesuai dengan lebar teks */
+    height: 2px; /* Tinggi garis bawah */
+    background-color: rgb(0, 0, 2); /* Warna garis bawah */
+    bottom: -2px; /* Menggeser garis bawah ke bawah sedikit agar tidak tumpang tindih dengan teks */
+    left: 0; /* Mulai dari kiri */
+    opacity: 0; /* Awalnya transparan */
+    transition: opacity 0.2s ease; /* Efek transisi saat hover */
+}
+.profile h5:hover::before{
+    opacity: 1; /* Membuat garis bawah menjadi terlihat saat dihover */
+}
+
+.profile h5:hover {
+    transform: scale(1.1) ;
 }
 .profile h1 {
     color:white;
@@ -62,6 +93,16 @@ body {
     padding-bottom: 300px;
     padding-top: 100px;
 }
+.biodata .about-me {
+    color: #0c0c0c;
+    transition: transform 0.3s ease;
+    justify-content: center;
+    display: flex; 
+}
+.biodata .about-me:hover {
+    transform: scale(1.1);
+    text-shadow:1px 1px 5px rgb(7, 44, 253)
+}
 .Sprachkenntnisse {
     background: linear-gradient(#ffffff 0%, rgba(255, 255, 255, 0.904) 40%, #ffffff00 100%);
     padding-bottom: 300px;
@@ -74,6 +115,16 @@ body {
     padding-top: 100px;
     background-blend-mode: hue;
 }
+.Experience-1 {
+    color: #0c0c0c;
+    transition: transform 0.3s ease;
+    justify-content: center;
+    display: flex; 
+}
+.Experience-1:hover {
+    transform: scale(1.1);
+    text-shadow:1px 1px 5px rgb(7, 44, 253)
+}
 .carousel-inner {
     display: grid;
     place-items: center;
@@ -84,6 +135,32 @@ body {
     padding-bottom: 2px;
     padding-top: 5px;
     background-blend-mode: hue;
+    
+}
+.footer h3 {
+    color: #0c0c0c;
+    transition: transform 0.3s ease;
+    justify-content: center;
+    display: flex; 
+    
+}
+.footer h3{
+    transform: scale(1.1);
+    /*text-shadow:1px 1px 5px rgb(7, 44, 253)*/
+}
+.footer .icon {
+    transition: transform 0.3s ease;
+    display: flex;
+    justify-content: center;
+    gap: 108px;
+}
+.footer .icon{
+    transform: scale(1.1);
+}
+.footer .text-icon{
+    display: flex;
+    justify-content: center;
+    gap: 88px;
 }
 .contact a {
     color: black;
@@ -93,3 +170,15 @@ body {
 .watermark {
     padding-top: 5px;
 }
+
+@media (max-width: 758px) {
+    html {
+        font-size: 70.5%;
+        
+    }
+.footer .icon {
+    gap: 70px;
+}
+.footer .text-icon{
+    gap: 66px
+}}

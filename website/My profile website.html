@@ -36,6 +36,9 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">My Profile</a>
+          <a class="container-brand"> 
+            <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+            <script src="script.js"></script>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -58,10 +61,6 @@
             </form>
           </div>
         </div>
-        <a class="container-brand"> 
-          <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
-          <script src="script.js"></script>
-        </a>
       </nav>
       
       <section>
@@ -84,7 +83,7 @@
       </svg>
     <section id="biodata" class="biodata">
         <section id="Mein Lebenslauf" class="Mein Lebenslauf"> 
-        <h1 class="text-center">About Me</h1>
+        <h1 class="about-me">About Me</h1>
         </section>
         <div class="container text-center">
             <div class="row">
@@ -228,11 +227,11 @@
     </svg>
     <section id="achievement" class="Experience">
         <div>
-            <h1 style="color: rgb(0, 0, 0);" class="text-center">Experience</h1>
+            <h1 style="color: rgb(0, 0, 0);" class="Experience-1">Experience</h1>
             <div class="container text-center">
                 <div class="row">
                   <div class="col-sm-3">
-                    <div class="card mx-auto" style="width: 17rem;">
+                    <div class="card mx-auto" style="width: 15rem;">
                     <img src="asset/image/denkspa.JPG" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">
@@ -249,7 +248,7 @@
                     </div>
                   </div></div>
                   <div class="col-sm-3">
-                    <div class="card mx-auto" style="width: 17rem;">
+                    <div class="card mx-auto" style="width: 15rem;">
                     <img src="asset/image/au-pair.jpg" class="card-img-top" alt="Aupair">
                     <div class="card-body">
                       <h5 class="card-title">Worked as Aupair in Germany</h5>
@@ -265,7 +264,7 @@
                     </div>
                   </div></div>
                   <div class="col-sm-3">
-                    <div class="card mx-auto" style="width: 17rem;">
+                    <div class="card mx-auto" style="width: 15rem;">
                     <img src="asset/image/Rotenburger Werke.jpg" class="card-img-top" alt="Rotenburger Werke">
                     <div class="card-body">
                       <h5 class="card-title">Working as a volunteer in the cafeteria of WfbM Königskamp.</h5>
@@ -280,11 +279,11 @@
                         </blockquote>
 
                       </p>
-                      <a href="https://www.rotenburger-werke.de/" class="btn btn-primary">rotenburger-werke</a>
+                      <a href="https://www.rotenburger-werke.de/" class="btn btn-primary">Rotenburger-Werke</a>
                     </div>
                   </div></div>
                   <div class="col-sm-3">
-                    <div class="card mx-auto" style="width: 17rem;">
+                    <div class="card mx-auto" style="width: 15rem;">
                     <img src="asset/image/DTS.JPG" class="card-img-top" alt="DTS">
                     <div class="card-body">
                       <h5 class="card-title">Learning data science, visualization, machine learning,
@@ -296,7 +295,7 @@
                         <i class="fa-solid fa-check"></i>Data Visualization <br>
                         <i class="fa-solid fa-check"></i>Artifical Intelligence and Machine Learning Fundamental <br>
                       </p>
-                      <a href="https://dtsense.id/" class="btn btn-primary">Website dtsense</a> 
+                      <a href="https://dtsense.id/" class="btn btn-primary">Website DT-sense</a> 
                       <p></p>
                       <a href="https://github.com/danielyogaz/BelajarDataScience/blob/main/Final_Project/codes/Final%20Project%20DTS2%20%22Prediction%20Diabetest%22.ipynb" class="btn btn-primary">
                         My final project on machine learning.</a>
@@ -314,10 +313,22 @@
     <section id="contact" class="footer">
         <div class="container text-center contact">
             <h3>Contact Me </h3>
+            <div class="icon">
             <a href="https://github.com/danielyogaz"><i class="fab fa-github"></i></a>
+            
             <a href="https://www.instagram.com/danielyogaz/"><i class="fab fa-instagram"></i></a>
+            
             <a href="https://www.linkedin.com/in/daniel-yoga-priyono-958b08269/"><i class="fab fa-linkedin"></i></a>
+            
             <a href="mailto:danielyogapriono@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+            
+          </div>
+          <div class="text-icon">
+            <h6 >Github</h6>
+            <h6>Instagram</h6>
+            <h6>LinkedIn</h6>
+            <h6>Email</h6>
+          </div>
             <h4>danielyogaz</h4>
         </div>
         <p class="text-center watermark">Created By Daniel Yoga Priyono 2023</p>
