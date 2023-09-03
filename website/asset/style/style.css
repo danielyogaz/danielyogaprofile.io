@@ -207,14 +207,14 @@ body {
 
 @media (max-width: 758px) {
     html {
-        font-size: 70.5%;
+        font-size: 75.5%;
         
     }
 .footer .icon {
     gap: 70px;
 }
 .footer .text-icon{
-    gap: 66px
+    gap: 61px
 }
 .Experience {
     font-size: 75%;
