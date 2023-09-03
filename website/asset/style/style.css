@@ -3,7 +3,7 @@
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-    color: #0c0c0c;
+    color: #f8f3f3;
     font-size: 10px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     letter-spacing: 7px;
@@ -35,6 +35,9 @@ body {
 .container-fluid:hover {
     transform: translate(0.3s);
 }
+.navbar-brand span {
+    color: rgb(255, 187, 0);
+}
 .profile{
     display: flex;
     justify-content: center;
@@ -50,20 +53,47 @@ body {
     overflow: hidden;
   
 }
+.profileImage {
+    animation: 2s ease-in anim-div;
+}
+
+@keyframes anim-div {
+    0% {
+        transform: scale(0.5);
+    }
+    100% {
+        transform: scaleX(1.0);
+    }
+}
 .profile h2 {
     color: white;
     transition: transform 0.3s;
     
 }
+.profile span {
+    color: rgb(255, 187, 0);
+    
+}
+.profile {
+    animation: 2s ease-in-out anim-div;
+}
 
-.profile h5 {
+@keyframes anim-div {
+    0% {
+        transform: scale(0.5);
+    }
+    100% {
+        transform: scaleX(1.0);
+    }
+}
+.profile a {
     color: white;
     transform: translateY(-5px);
     transition: transform 0.3s ease;
     text-decoration: none; /* Menghilangkan underline default */
     position: relative; /* Membuat ruang untuk garis bawah yang akan ditambahkan */
 }
-.profile h5::before {
+.profile a::before {
     content: ''; /* Menambahkan konten pseudo-element sebelum teks */
     position: absolute; /* Menempatkan garis bawah di bawah teks */
     width: 100%; /* Panjang garis bawah sesuai dengan lebar teks */
@@ -74,12 +104,15 @@ body {
     opacity: 0; /* Awalnya transparan */
     transition: opacity 0.2s ease; /* Efek transisi saat hover */
 }
-.profile h5:hover::before{
-    opacity: 1; /* Membuat garis bawah menjadi terlihat saat dihover */
+.profile a:hover::before{
+    opacity: 0; /* Membuat garis bawah menjadi terlihat saat dihover */
 }
 
-.profile h5:hover {
+.profile a:hover {
     transform: scale(1.1) ;
+}
+.profile h6{
+    padding-top: 6px;
 }
 .profile h1 {
     color:white;
@@ -101,8 +134,9 @@ body {
 }
 .biodata .about-me:hover {
     transform: scale(1.1);
-    text-shadow:1px 1px 5px rgb(7, 44, 253)
+    text-shadow:1px 1px 5px rgb(205, 212, 253)
 }
+
 .Sprachkenntnisse {
     background: linear-gradient(#ffffff 0%, rgba(255, 255, 255, 0.904) 40%, #ffffff00 100%);
     padding-bottom: 300px;
@@ -111,7 +145,7 @@ body {
 }
 .Experience {
     background: linear-gradient(#ffffff 0%, rgba(255, 255, 255, 0.973) 40%, #ffffff00 100%);
-    padding-bottom: 300px;
+    padding-bottom: 200px;
     padding-top: 100px;
     background-blend-mode: hue;
 }
@@ -123,7 +157,7 @@ body {
 }
 .Experience-1:hover {
     transform: scale(1.1);
-    text-shadow:1px 1px 5px rgb(7, 44, 253)
+    text-shadow:1px 1px 5px rgb(205, 212, 253)
 }
 .carousel-inner {
     display: grid;
@@ -181,4 +215,8 @@ body {
 }
 .footer .text-icon{
     gap: 66px
+}
+.Experience {
+    font-size: 75%;
 }}
+
